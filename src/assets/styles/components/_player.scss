@@ -1,0 +1,78 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: $red;
+    color: $light
+}
+main {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.song-title {
+    color: #696969;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.song-title span {
+    font-weight: 400;
+    font-style: italic;
+}
+.controlls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+}
+button {
+    background: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+}
+.play {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    margin: 0rem 1rem;
+    border-radius: .5em;
+    background-color: $red;
+}
+.next, .prev {
+    font-size: 16px;
+    font-weight: 700;
+    padding: .6rem .6rem;
+    margin: 0rem 1rem;
+    border-radius: .5em;
+    background-color: $light-gray;
+}
+.playlist {
+    padding: 0 1.5rem;
+}
+.playlist h3 {
+    color: #212121;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.playlist .song {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.playlist .song.playing {
+    color: $light-gray;
+}
